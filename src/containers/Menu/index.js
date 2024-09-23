@@ -1,4 +1,7 @@
 /* eslint-disable no-return-assign */
+
+// NOTE LINK THREW SECTIONS CHANGED
+
 import Button from "../../components/Button";
 import Logo from "../../components/Logo";
 
@@ -9,16 +12,19 @@ const Menu = () => (
     <Logo />
     <ul>
       <li>
-        <a href="#nos-services">Nos services</a>
+        <a href="#ServicesContainer">Nos services</a>
       </li>
       <li>
-        <a href="#nos-realisations">Nos réalisations</a>
+        <a href="#EventsContainer">Nos réalisations</a>
       </li>
       <li>
-        <a href="#notre-equipe">Notre équipe</a>
+        <a href="#PeoplesContainer">Notre équipe</a>
       </li>
     </ul>
-    <Button title="contact" onClick={() => (window.document.location.hash = "#contact")}>
+    <Button
+      title="contact"
+      onClick={() => (window.document.location.hash = "#contact")}
+    >
       Contact
     </Button>
   </nav>

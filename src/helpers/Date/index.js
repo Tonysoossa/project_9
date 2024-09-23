@@ -13,4 +13,6 @@ export const MONTHS = {
   12: "décembre",
 };
 
-export const getMonth = (date) => MONTHS[date.getMonth()];
+export const getMonth = (date) => MONTHS[date.getMonth() +1];
+
+// NOTE add +1 after getMonth() because computer will read 1 as 0 so to start at 1 (janvier) we need to say default (0) +1

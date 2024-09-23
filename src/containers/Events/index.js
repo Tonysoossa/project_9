@@ -14,10 +14,10 @@ const EventList = () => {
   const [type, setType] = useState();
   const [currentPage, setCurrentPage] = useState(1);
   const filteredEvents = (
-    (!type
-      ? data?.events
-      : data?.events) || []
-  ).filter((event, index) => {
+    (!type ? data?.events
+       // CORRECTION : Ajout de ".filter" pour filtrer les évenements par catégories
+      : data?.events.filter((e) => e.type === type)) || []
+  ).filter((_, index) => {
     if (
       (currentPage - 1) * PER_PAGE <= index &&
       PER_PAGE * currentPage > index

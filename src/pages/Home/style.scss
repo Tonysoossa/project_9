@@ -7,7 +7,7 @@ main {
   background-color: $primary;
 }
 
-.ServicesContainer {
+#ServicesContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@ main {
   }
 }
 
-.EventsContainer {
+#EventsContainer {
   background-color: $primary;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@ main {
   }
 }
 
-.PeoplesContainer {
+#PeoplesContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
