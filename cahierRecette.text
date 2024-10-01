@@ -1,0 +1,36 @@
+# Cahier de recette project_9 OPCR, 724 events
+
+Scénario 1: containers/Events 
+Given:	En consultant la liste des évènements
+When:	  Lorsque je sélectionne une catégorie
+Then:	  La liste des évènements affiche uniquement les événements de la catégorie sélectionnée.
+
+Scénario 2: containers/Slider && helpers/Date
+Given:	Le défilement des images du carrousel 
+When:	  Lors du  passage entre la dernière et la première images
+Then:   Passage du dernier au premier élément sans coupure (image blanche) et la date correspond 
+
+Scénario 3: contexts/DataContext
+Given:	Le défilement des images du carrousel 
+When:	  A la succession des images  
+Then:   Affichage du plus ancien au plus récent (dates des évènements)
+
+Scénario 4: containers/Events && contexts/DataContext
+Given:	En consultant la liste des évènements
+When:	  A la lecture des évènements
+Then:   Le mois lié a l’évènements est le bon
+
+Scénario 5: containers/Form
+Given:	Lors de l’envoi du formulaire
+When:	  Après complétion du formulaire, au click de bouton ‘Envoyer’
+Then:   Un message affirmant que le formulaire a bien été envoyé
+
+Scénario 6: page/Home && contexts/DataContext
+Given:	Affichage de la dernière prestation réalisé  
+When:	  Au bas de la page, dans le footer
+Then:   La dernière prestation est afficher sous forme de petite vignette avec l’image et la date 
+
+Scénario 7: containers/Menu
+Given:	En haut de la page du site, les différente sections de la page
+When:	  Au click des liens du site
+Then:   Renvoi vers la section lié au lien du haut de la page
