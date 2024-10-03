@@ -12,7 +12,7 @@ const Form = ({ onSuccess, onError }) => {
     async (evt) => {
       evt.preventDefault();
       setSending(true);
-      // We try to call mockContactApi
+      // We try to call mockContactApi NOTE
       try {
         await mockContactApi();
         setSending(false);

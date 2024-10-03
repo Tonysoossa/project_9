@@ -7,6 +7,8 @@ import Logo from "../../components/Logo";
 
 import "./style.scss";
 
+// NOTE Modif des redirection vers les sections lié
+
 const Menu = () => (
   <nav>
     <Logo />

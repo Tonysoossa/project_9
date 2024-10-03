@@ -21,8 +21,8 @@ export const DataProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const [data, setData] = useState(null);
 
-  // NOTE Add last and useMemo, usememo is used to memorized math to save data reload threw time
-
+  // NOTE Add last and useMemo, usememo is used to memorized math to save data reload threw time 
+ 
   const last = useMemo(() => {
     if (!data) return null;
     return data.events?.reduce((mostRecent, e) => {
@@ -49,7 +49,7 @@ export const DataProvider = ({ children }) => {
       value={{
         data,
         error,
-        last,
+        last,  
       }}
     >
       {children}

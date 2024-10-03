@@ -8,6 +8,7 @@ const Slider = () => {
   const { data } = useData();
   const [index, setIndex] = useState(0);
 
+  // affichage plus ancien au plus récent NOTE
   const byDateDesc = data?.focus.sort((evtA, evtB) =>
     new Date(evtA.date) < new Date(evtB.date) ? 1 : -1
   );
@@ -15,6 +16,7 @@ const Slider = () => {
   const nextCard = () => {
     if (byDateDesc && byDateDesc.length > 0) {
       setTimeout(
+        // NOTE -1 après "length" 
         () => setIndex(index < byDateDesc.length - 1 ? index + 1 : 0),
         5000
       );

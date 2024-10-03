@@ -15,7 +15,7 @@ const EventList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const filteredEvents = (
     (!type ? data?.events
-       // CORRECTION : Ajout de ".filter" pour filtrer les évenements par catégories
+       // NOTE Ajout de ".filter" pour filtrer les évenements par catégories
       : data?.events.filter((e) => e.type === type)) || []
   ).filter((_, index) => {
     if (
@@ -61,7 +61,7 @@ const EventList = () => {
           </div>
           <div className="Pagination">
             {[...Array(pageNumber || 0)].map((_, n) => (
-              // eslint-disable-next-line react/no-array-index-key
+              //  eslint-disable-next-line react/no-array-index-key 
               <a key={n} href="#events" onClick={() => setCurrentPage(n + 1)}>
                 {n + 1}
               </a>

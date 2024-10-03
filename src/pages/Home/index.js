@@ -114,7 +114,7 @@ const Page = () => {
       </main>
       <footer data-testid="footer" className="row">
         {last && (
-          // Ajout de last pour afficher la dernière présentation, ajout de modal et modalEvent pour qu'une modale s'ouvre lors du clique
+          // NOTE Ajout de last pour afficher la dernière préstation, ajout de modal et modalEvent pour qu'une modale s'ouvre lors du clique
           <div data-testid="event-card" className="col presta">
             <h3>Notre dernière prestation</h3>
             {!last ? (
